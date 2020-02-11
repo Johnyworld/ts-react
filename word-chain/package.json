@@ -1,5 +1,5 @@
 {
-  "name": "lecture",
+  "name": "word-chain",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Johny Kim",
@@ -9,9 +9,11 @@
     "@types/react-dom": "^16.9.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.19",
     "typescript": "^3.7.5"
   },
   "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }

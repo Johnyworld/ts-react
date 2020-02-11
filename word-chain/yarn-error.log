@@ -1,0 +1,42 @@
+Arguments: 
+  /Users/Johnyworld/.nvm/versions/node/v12.14.1/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add react react-dom @type/react @type/react-dom
+
+PATH: 
+  /usr/local/mongodb/bin:/Users/Johnyworld/.nvm/versions/node/v12.14.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mongodb/bin:/usr/local/Cellar/openvpn/2.4.8/sbin:/usr/local/opt/fzf/bin:/usr/local/Cellar/openvpn/2.4.8/sbin:/usr/local/mongodb/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.14.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@type%2freact: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66830:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140464:22)
+      at Request.emit (events.js:223:5)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141436:10)
+      at Request.emit (events.js:223:5)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:312:28)
+      at IncomingMessage.emit (events.js:228:7)
+      at endReadableNT (_stream_readable.js:1185:12)
+      at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+npm manifest: 
+  {
+    "name": "word-chain",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Johny Kim",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
