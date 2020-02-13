@@ -47,3 +47,41 @@ return <button onClick={()=>{ handleClick(name) }}>Button</button>
 const handleClick = (name) => () => { ... }
 return <button onClick={handleClick(name)}>
 ```
+
+### Function Component Type
+
+```jsx
+interface Props {
+    name: string;
+    phone: string;
+    age: number;
+    children: string;
+}
+
+const Comp: React.FC<Props> = ({ name, phone, age }) => {
+    ...
+}
+```
+
+여기서, `interface Props` 에 선언 된 `children`은 `props`에 존재하지 않는다. `children`은 해당 컴포넌트가 호출될 때, 여는태그와 닫는태그 사이에 존재하는 내용이다.
+
+```jsx
+<Comp name={'Henry Lee'} phone={'+8210-000-0000'} age={25} >'This is children'</>
+```
+
+### Etc.
+
+배열 타입 설정
+
+```jsx
+// string 의 배열
+type arr = string[];
+type arr = Array<string>;
+
+// object 의 배열
+interface obj { name: string | number };
+type arr = Array<obj>;
+
+// 복합적인 배열
+type arr = (string | number | boolean)[];
+```
