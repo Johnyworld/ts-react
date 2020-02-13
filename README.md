@@ -24,3 +24,26 @@ setTimeout 을 사용할 때, typescript 가 setTimeout 이 nodejs 에서 실행
 window.setTimeout(()=>{ ... }, 1000) 
 ```
 
+### Object.keys
+
+Object.keys 로 만들어진 배열은 무조건 string[] 타입으로 추론 된다. 타입 범위를 좁혀주기 위해서는 반드시 강제 형변환을 해주어야 한다. 아래 코드를 보자.
+
+```jsx
+const keys = (Object.keys(object) as [ 'id', 'name', 'age' ]);
+```
+
+### 고차함수
+
+고차함수는 이벤트에서 익명함수로 다른 함수를 호출하는 방법을 대체할 수 있다.
+
+```jsx
+const handleClick = (name) => { ... }
+return <button onClick={()=>{ handleClick(name) }}>Button</button>
+```
+
+위 코드를 아래와 같이 바꿀 수 있다. JSX 의 코드가 좀 더 간결해 진다.
+
+```jsx
+const handleClick = (name) => () => { ... }
+return <button onClick={handleClick(name)}>
+```
